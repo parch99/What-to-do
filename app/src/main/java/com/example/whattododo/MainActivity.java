@@ -3,11 +3,14 @@ package com.example.whattododo;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.button.MaterialButton;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
 
+        //Notification icon
         //BadgeDrawable badgeDrawable = bottomNavigationView.getOrCreateBadge(R.id.notes);
         //badgeDrawable.setVisible(true);
         //badgeDrawable.setNumber(8);
@@ -53,6 +57,5 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
     }
 }

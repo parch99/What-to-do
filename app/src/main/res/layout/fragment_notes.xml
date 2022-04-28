@@ -3,13 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/reddish"
+    android:padding="10dp"
     tools:context=".HomeFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Notes Fragment"
-        android:textSize="25dp"
-        android:layout_centerInParent="true"/>
+        android:id="@+id/notestitle"
+        android:text="NOTES"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:id="@+id/recyclerview"
+        android:layout_above="@id/addnewnotebtn"
+        android:layout_below="@+id/notestitle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a new note"
+        android:id="@+id/addnewnotebtn"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/reddish"
+        android:backgroundTint="@color/white"/>
 
 </RelativeLayout>
