@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
 
-        //Notification icon
+        // ---Notification icon---
         //BadgeDrawable badgeDrawable = bottomNavigationView.getOrCreateBadge(R.id.notes);
         //badgeDrawable.setVisible(true);
         //badgeDrawable.setNumber(8);
