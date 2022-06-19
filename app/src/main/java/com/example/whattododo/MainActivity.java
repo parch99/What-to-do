@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView  = findViewById(R.id.bottom_navigation);
 
+        /*getSupportFragmentManager().beginTransaction().add(R.id.container, new ScheduleFragment()).commit();*/
+
         getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
 
         // ---Notification icon---
