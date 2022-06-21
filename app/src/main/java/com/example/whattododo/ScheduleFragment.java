@@ -374,6 +374,7 @@ public class ScheduleFragment extends Fragment {
                 // We use a String here, but any type that can be put in a Bundle is supported
                 String result = bundle.getString("bundleKey11");
                 textView8.setText(result);
+                textView14.setText("");
             }});
 
         getParentFragmentManager().setFragmentResultListener("requestKey12", this, new FragmentResultListener() {
@@ -382,6 +383,7 @@ public class ScheduleFragment extends Fragment {
                 // We use a String here, but any type that can be put in a Bundle is supported
                 String result2 = bundle2.getString("bundleKey12");
                 textView9.setText(result2);
+                textView14.setText("");
             }});
 
         getParentFragmentManager().setFragmentResultListener("requestKey13", this, new FragmentResultListener() {
@@ -390,6 +392,7 @@ public class ScheduleFragment extends Fragment {
                 // We use a String here, but any type that can be put in a Bundle is supported
                 String result3 = bundle3.getString("bundleKey13");
                 textView10.setText(result3);
+                textView14.setText("");
             }});
 
         getParentFragmentManager().setFragmentResultListener("requestKey14", this, new FragmentResultListener() {
@@ -398,6 +401,7 @@ public class ScheduleFragment extends Fragment {
                 // We use a String here, but any type that can be put in a Bundle is supported
                 String result4 = bundle4.getString("bundleKey14");
                 textView11.setText(result4);
+                textView14.setText("");
             }});
 
         getParentFragmentManager().setFragmentResultListener("requestKey15", this, new FragmentResultListener() {
@@ -406,6 +410,7 @@ public class ScheduleFragment extends Fragment {
                 // We use a String here, but any type that can be put in a Bundle is supported
                 String result5 = bundle5.getString("bundleKey15");
                 textView12.setText(result5);
+                textView14.setText("");
             }});
 
         getParentFragmentManager().setFragmentResultListener("requestKey16", this, new FragmentResultListener() {
@@ -414,6 +419,7 @@ public class ScheduleFragment extends Fragment {
                 // We use a String here, but any type that can be put in a Bundle is supported
                 String result6 = bundle6.getString("bundleKey16");
                 textView13.setText(result6);
+                textView14.setText("");
             }});
     }
 
