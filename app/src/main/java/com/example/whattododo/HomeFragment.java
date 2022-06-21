@@ -8,14 +8,22 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentResultListener;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
+import io.realm.Realm;
+import io.realm.RealmChangeListener;
+import io.realm.RealmResults;
+import io.realm.Sort;
 
 public class HomeFragment extends Fragment {
 
@@ -210,7 +218,31 @@ public class HomeFragment extends Fragment {
             }
         });
 
+
+
+
+        Realm.init(getActivity().getApplicationContext());
+        Realm realm2 = Realm.getDefaultInstance();
+
+        RealmResults<NoteForHome> notesList2 = realm2.where(NoteForHome.class).findAllSorted("createdTime", Sort.DESCENDING);
+
+        RecyclerView recyclerView2 = view.findViewById(R.id.recyclerview2);
+        recyclerView2.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        MyAdapterForHomeNotes MyAdapterForHomeNotes = new MyAdapterForHomeNotes(getActivity().getApplicationContext(),notesList2);
+        recyclerView2.setAdapter(MyAdapterForHomeNotes);
+
+        notesList2.addChangeListener(new RealmChangeListener<RealmResults<NoteForHome>>() {
+            @Override
+            public void onChange(RealmResults<NoteForHome> notes) {
+                MyAdapterForHomeNotes.notifyDataSetChanged();
+            }
+        });
+
     }
+
+
+
 
 
     public void saveData(){
