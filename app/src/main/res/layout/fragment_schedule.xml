@@ -9,9 +9,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:text="Schedule"
-        android:textSize="30dp" />
+        android:layout_marginTop="20px"
+        android:text="SCHEDULE"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
 
     <android.widget.Button
         android:id="@+id/button"

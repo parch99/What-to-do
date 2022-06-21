@@ -53,7 +53,10 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.container,scheduleFragment).commit();
                         return true;
                     case R.id.settings:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,settingsFragment).commit();
+                        //getSupportFragmentManager().beginTransaction().replace(R.id.container,settingsFragment).commit();
+                        //getFragmentManager().beginTransaction().replace(android.R.id.content, new MyPreferencesActivity.MyPreferenceFragment()).commit();
+                        Intent i = new Intent(MainActivity.this, MyPreferencesActivity.class);
+                        startActivity(i);
                         return true;
                 }
 

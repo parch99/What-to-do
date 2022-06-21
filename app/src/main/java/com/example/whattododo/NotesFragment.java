@@ -20,6 +20,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 
 public class NotesFragment extends Fragment {
@@ -35,7 +36,7 @@ public class NotesFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        MaterialButton addNoteBtn = view.findViewById(R.id.addnewnotebtn);
+        FloatingActionButton addNoteBtn = view.findViewById(R.id.addnewnotebtn);
         addNoteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

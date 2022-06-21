@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentResultListener;
+import androidx.preference.PreferenceManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,6 +34,15 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getActivity().getBaseContext());
+        String strUserName = SP.getString("username", "NA");
+        TextView TextView4usr = (TextView) view.findViewById(R.id.username);
+        if(strUserName == "NA"){
+            TextView4usr.setText("Lets get to work");
+        } else {
+            TextView4usr.setText("Lets get to work " + strUserName);
+        }
+
 
         textView = (TextView) view.findViewById(R.id.textView);
         textView2 = (TextView) view.findViewById(R.id.textView2);
