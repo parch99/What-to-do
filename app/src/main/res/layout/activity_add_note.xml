@@ -32,7 +32,7 @@
             android:textSize="20dp"
             android:padding="8dp"
             android:background="@color/white"
-            android:textColor="#11CF18"/>
+            android:textColor="#0C8811"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             android:padding="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/white"
-            android:textColor="#11CF18"
+            android:textColor="#0C8811"
             android:lines="8"
             android:gravity="top"/>
     </LinearLayout>
