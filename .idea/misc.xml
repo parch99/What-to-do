@@ -18,6 +18,10 @@
         <entry key="..\:/WhatToDoDo3/app/src/main/res/drawable/btn_bg.xml" value="0.2865" />
         <entry key="..\:/WhatToDoDo3/app/src/main/res/drawable/btn_bg_off.xml" value="0.2865" />
         <entry key="..\:/WhatToDoDo3/app/src/main/res/drawable/button_bg.xml" value="0.2865" />
+        <entry key="..\:/WhatToDoDo3/app/src/main/res/drawable/button_bg2.xml" value="0.336" />
+        <entry key="..\:/WhatToDoDo3/app/src/main/res/drawable/button_bg3.xml" value="0.336" />
+        <entry key="..\:/WhatToDoDo3/app/src/main/res/drawable/button_bg4.xml" value="0.336" />
+        <entry key="..\:/WhatToDoDo3/app/src/main/res/drawable/notes.xml" value="0.336" />
         <entry key="..\:/WhatToDoDo3/app/src/main/res/drawable/selector.xml" value="0.2865" />
         <entry key="..\:/WhatToDoDo3/app/src/main/res/layout/activity_add_note.xml" value="0.3625" />
         <entry key="..\:/WhatToDoDo3/app/src/main/res/layout/fragment_home.xml" value="0.25" />
@@ -25,6 +29,7 @@
         <entry key="..\:/WhatToDoDo3/app/src/main/res/layout/fragment_notes2.xml" value="0.3625" />
         <entry key="..\:/WhatToDoDo3/app/src/main/res/layout/fragment_schedule.xml" value="0.25" />
         <entry key="..\:/WhatToDoDo3/app/src/main/res/layout/item_view.xml" value="0.3625" />
+        <entry key="..\:/WhatToDoDo3/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.336" />
       </map>
     </option>
   </component>
