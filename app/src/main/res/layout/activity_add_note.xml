@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/reddish"
+    android:background="#21bf96"
     tools:context=".AddNoteActivity">
     
     <TextView
@@ -32,7 +32,7 @@
             android:textSize="20dp"
             android:padding="8dp"
             android:background="@color/white"
-            android:textColor="@color/reddish"/>
+            android:textColor="#11CF18"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             android:padding="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/white"
-            android:textColor="@color/reddish"
+            android:textColor="#11CF18"
             android:lines="8"
             android:gravity="top"/>
     </LinearLayout>
@@ -54,7 +54,7 @@
         android:id="@+id/savebtn"
         android:backgroundTint="@color/white"
         android:layout_gravity="center"
-        android:textColor="@color/reddish"/>
+        android:textColor="#0A850E"/>
 
 
 </LinearLayout>

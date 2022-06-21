@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/reddish"
+    android:background="#21bf96"
     android:padding="10dp"
     tools:context=".HomeFragment">
 
@@ -13,8 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:id="@+id/notestitle"
-        android:text="NOTES"
-        android:textSize="20dp"
+        android:text="Notes"
+        android:layout_marginTop="25dp"
+        android:textSize="30dp"
         android:textColor="@color/white"
         android:textStyle="bold"/>
 
@@ -24,7 +25,7 @@
         android:layout_height="match_parent"
         android:layout_above="@id/addnewnotebtn"
         android:layout_below="@+id/notestitle"
-        android:layout_marginTop="4dp" />
+        android:layout_marginTop="25dp" />
 
     <!--
     <com.google.android.material.button.MaterialButton

@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/titleoutput"
         android:textSize="23dp"
-        android:textColor="@color/reddish"
+        android:textColor="#149C1A"
         android:textStyle="bold"
         android:text="My Title" />
     <TextView
@@ -20,7 +20,7 @@
         android:id="@+id/descriptionoutput"
         android:layout_below="@+id/titleoutput"
         android:textSize="18dp"
-        android:textColor="@color/reddish"
+        android:textColor="#16BD1D"
         android:text="My description" />
     <TextView
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
         android:id="@+id/timeoutput"
         android:layout_below="@+id/descriptionoutput"
         android:textSize="13dp"
-        android:textColor="@color/dark_reddish"
+        android:textColor="#009706"
         android:gravity="end"
         android:text="Jun 13 2022 " />
 
