@@ -52,10 +52,10 @@ public class MyAdapterForHomeNotes extends RecyclerView.Adapter<MyAdapterForHome
                     public boolean onMenuItemClick(MenuItem item) {
                         if(item.getTitle().equals("DELETE")){
                             //delete the note
-                            Realm realm = Realm.getDefaultInstance();
-                            realm.beginTransaction();
+                            Realm realm2 = Realm.getDefaultInstance();
+                            realm2.beginTransaction();
                             note.deleteFromRealm();
-                            realm.commitTransaction();
+                            realm2.commitTransaction();
                             Toast.makeText(context2,"Note deleted",Toast.LENGTH_SHORT).show();
                         }
                         return true;
