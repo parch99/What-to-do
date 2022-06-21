@@ -40,6 +40,31 @@ public class MyAdapterForHomeNotes extends RecyclerView.Adapter<MyAdapterForHome
 
         String formatedTime = DateFormat.getDateTimeInstance().format(note.getCreatedTime());
         holder.timeOutput.setText(formatedTime);
+
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+
+                PopupMenu menu = new PopupMenu(context2,v);
+                menu.getMenu().add("DELETE");
+                menu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        if(item.getTitle().equals("DELETE")){
+                            //delete the note
+                            Realm realm = Realm.getDefaultInstance();
+                            realm.beginTransaction();
+                            note.deleteFromRealm();
+                            realm.commitTransaction();
+                            Toast.makeText(context2,"Note deleted",Toast.LENGTH_SHORT).show();
+                        }
+                        return true;
+                    }
+                });
+                menu.show();
+                return true;
+            }
+        });
     }
 
     @Override
