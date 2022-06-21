@@ -2,9 +2,8 @@ package com.example.whattododo;
 
 import io.realm.RealmObject;
 
-public class Note extends RealmObject {
+public class NoteForHome extends RealmObject {
     String title;
-    String description;
     long createdTime;
 
     public String getTitle() {
@@ -13,13 +12,6 @@ public class Note extends RealmObject {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public long getCreatedTime() {

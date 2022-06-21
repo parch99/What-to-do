@@ -37,8 +37,12 @@ public class AddNoteActivity extends AppCompatActivity {
                 note.setTitle(title);
                 note.setDescription(description);
                 note.setCreatedTime(createdTime);
+                //for Home page Note without description
+                NoteForHome note2 = realm.createObject(NoteForHome.class);
+                note2.setTitle(title);
+                note2.setCreatedTime(createdTime);
                 realm.commitTransaction();
-                Toast.makeText(getApplicationContext(), "Note saved", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "Note saved", Toast.LENGTH_SHORT).show();
                 finish();
             }
         });
